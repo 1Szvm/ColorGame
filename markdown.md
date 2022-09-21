@@ -1,9 +1,9 @@
+# Verzió kezelés
 
+Helyirepo létrehozása:
 
-helyirepo létrehozása:
-
- git init
- git status
- git add .
- git comit -m "szöveg"
- git status
+ - git init
+ - git status
+ - git add .
+ - git commit -m "szöveg"
+ - git status
