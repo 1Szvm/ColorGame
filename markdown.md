@@ -7,3 +7,5 @@ Helyirepo létrehozása:
  - git add .
  - git commit -m "szöveg"
  - git status
+
+ távolirepo
