@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömbök</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        let szam=[11,52,66,3,8,9,1]
+        console.log(`A tömb hossza ${szam.length}`)
+        console.log(szam[0])
+        console.log(szam[szam.length-1])
+        for(let i=0; i<szam.length-1; i++){
+            console.log(`inde:${i}-értéke:${szam[1]}`)
+        }
+        for(let it in szam){
+            console.log(it)
+        }
+
+
+        let liStr=""
+        for(let it in szam){
+            liStr+=`<li>${it}</li>`
+        }
+
+        let nevs=["Béla","Gyula","Bence"]
+        let nevek
+        for (let i in nevs){
+            nevek+=`<li>${nevs[i]}</li>`
+        }
+        let ulObj = document.querySelector('ul')
+        ulObj.innerHTML=nevek
+        szamok=[...szamok,1250]
+        let s2=[1,2,3]
+
+        let newt=[...szamok,...s2]
+
+        
+    </script>
+</body>
+</html>
