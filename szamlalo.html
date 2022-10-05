@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>szam xd</title>
+    <style>
+        .counter{
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="btn btn-primary" onclick="setCounter(this)">-</div>
+        <div class="counter text-center border border-primary mx-2">0</div>
+        <div class="btn btn-success" onclick="setCounter(this)">+</div>
+    </div>
+
+    <script>
+        let counter =+ document.querySelector(".counter").innerHTML
+        /*function decrement(){
+            if (counter>0){
+                document.querySelector(".counter").innerHTML=--counter
+                document.querySelector(".btn-success").classList.remove("disabled")
+            }else{
+                document.querySelector(".btn-primary").classList.add("disabled")
+            }
+        }
+        function increment(){
+            if (counter<10){
+                document.querySelector(".counter").innerHTML=++counter
+                document.querySelector(".btn-primary").classList.remove("disabled")
+            }else{
+                document.querySelector(".btn-success").classList.add("disabled")
+            }
+
+        }*/
+
+        
+        function setCounter(obj){
+            console.log(obj.innerHTML)
+            if(obj.innerHTML=="+"){
+                document.querySelector(".counter").innerHTML=++counter
+            }else{
+                document.querySelector(".counter").innerHTML=--counter
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
