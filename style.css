@@ -1,0 +1,19 @@
+body{
+    background-color: lightgray;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+h1{
+    background-color: white;
+}
+.msg{
+    width: 50px;
+    margin: 0 auto;
+}
